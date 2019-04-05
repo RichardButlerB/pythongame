@@ -1,7 +1,7 @@
 # name: Killer Z
 # author: Rich
 # 4-3-19
-# description: Zombies attach! will you make it out alive?
+# description: Zombies attack! Will you make it out alive?
 import sys
 import random
 import time
