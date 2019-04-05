@@ -61,7 +61,7 @@ def weapon():
             if chooseWeapon == "1":
                 print("Excellent choice. The shotgun has tremendous power, however it is also loud and will attract the others.\n"
                   "you cock the shotgun ever so quietly as to not alert whatever is making the sound downstairs.\n")
-            time.sleep(9)
+            time.sleep(0)
             def goshotty():
                     print("You head to the stairs, slowly while trying to be as silent as possible.\n"
                         "You hear light creaking under feet as you reach the first step of the stairs\n"
@@ -70,15 +70,15 @@ def weapon():
                         "its so dark you think to yourself - very quickly to not distract from self preservation\n"
                         "the stairs are creeking louder now\n"
                         "you have arrived at the bottom step and....\n")
-                    time.sleep(9)
+                    time.sleep(0)
                     print("The noise you were awoken to is louder now. It sounds like a pack of wolves feasting on a giant caribou\n"
                             "you take your last step and the step makes a high pitch creeeeeaaaak \n")
-                    time.sleep(9)
+                    time.sleep(0)
                     print("the movement and sounds stop\n"
                             "you quickly look towards the window\n"
                             "5 undead beings are eating your dog")
                     dog = input("You ready your shotgun, aim at the 5 beings that spotted you. \n"
-                            "[1] Squeeze the trigger and shoot [2] run back upstairs")
+                            "[1] Squeeze the trigger and shoot [2] run back upstairs ")
                     if dog == "1":
                                 print("You shoot the first Zombie that runs at you\n"
                                 "\n!!!!!!!!!!!!!!\n"
@@ -91,12 +91,11 @@ def weapon():
                                 "its balls fall to the floor\n"
                                 "as you are standing there you're in shock that the zombie had balls\n"
                                 "while in shock the last zombie jumps at you from behind and tears apart the nape of you neck\n ")
-                    time.sleep(6)
-
-                    dead = "!!!!!!YOUR DEAD!!!!!!"
-                    for char in dead:
-                            sleep(0.1)
-                            print(dead, end="", flush=True)
+                                time.sleep(2)
+                                print("!!!!Your DEAD!!!!!")
+                    if dog == "2":
+                        print("you run back up stairs to get a different weapon. The zombies are close behind you as you get to your room and slam the door behind you.\n"
+                              "and pull the bed in front of the door.")
 
 
             goshotty()
@@ -110,7 +109,3 @@ def weapon():
 
     return chooseWeapon
 weapon()
-
-
-
-
